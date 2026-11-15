@@ -14,7 +14,6 @@ Uses the Okta org from Lab 1. 📸 = screenshot.
 | Tool | Check | Install if missing |
 | --- | --- | --- |
 | Python 3.9 or newer | `python3 --version` | `brew install python` |
-| pip | `python3 -m pip --version` | comes with Homebrew Python |
 | Git and VS Code | from Lab 1 | |
 | VS Code extension (optional) | | Python (by Microsoft) |
 
@@ -25,10 +24,12 @@ The script's packages (`requests`, `pytest`) install in Step 1.
 **1. Run it on sample data.** In VS Code's terminal:
 ```bash
 cd ~/Documents/GitHub && git clone https://github.com/jasonroland-tech/okta-identity-audit.git && cd okta-identity-audit
-python3 -m pip install -r requirements.txt
-python3 -m pytest -q
-python3 okta_audit.py --mock
+python3 -m venv .venv && source .venv/bin/activate     # private Python just for this repo
+pip install -r requirements.txt
+python -m pytest -q
+python okta_audit.py --mock
 ```
+*Why the venv:* newer Mac Python blocks installing packages system wide. If you open a new terminal later, run `source .venv/bin/activate` again first.
 Open `reports/okta_audit_<date>.md` (right click > Open Preview). 📸 the summary table.
 *Why:* proves the logic works before it touches a real org.
 
@@ -43,7 +44,7 @@ Open `reports/okta_audit_<date>.md` (right click > Open Preview). 📸 the summa
 ```bash
 export OKTA_ORG_URL="https://integrator-1234567.okta.com"
 export OKTA_API_TOKEN="paste-token"
-python3 okta_audit.py --check-admins --pending-days 0
+python okta_audit.py --check-admins --pending-days 0
 ```
 `--pending-days 0` flags today's staged account so a new org has results. 📸 the output and report.
 
