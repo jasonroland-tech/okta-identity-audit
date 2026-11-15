@@ -5,6 +5,23 @@
 
 Uses the Okta org from Lab 1. 📸 = screenshot.
 
+## Before you start
+
+**Accounts**
+- [ ] **Okta org from Lab 1** (Integrator Free Plan). You'll create a read only admin and an API token in it.
+
+**Software on your Mac** (run each check in Terminal; install only what's missing)
+| Tool | Check | Install if missing |
+| --- | --- | --- |
+| Python 3.9 or newer | `python3 --version` | `brew install python` |
+| pip | `python3 -m pip --version` | comes with Homebrew Python |
+| Git and VS Code | from Lab 1 | |
+| VS Code extension (optional) | | Python (by Microsoft) |
+
+The script's packages (`requests`, `pytest`) install in Step 1.
+
+## Steps
+
 **1. Run it on sample data.** In VS Code's terminal:
 ```bash
 cd ~/Documents/GitHub && git clone https://github.com/jasonroland-tech/okta-identity-audit.git && cd okta-identity-audit
