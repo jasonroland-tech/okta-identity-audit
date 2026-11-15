@@ -1,0 +1,9 @@
+# Live reports contain real logins
+reports/*
+!reports/.gitkeep
+!reports/example-redacted.md
+
+__pycache__/
+.pytest_cache/
+.venv/
+.env

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "00u1active",
+    "status": "ACTIVE",
+    "created": "2026-01-10T15:00:00.000Z",
+    "lastLogin": "2026-11-10T14:00:00.000Z",
+    "profile": {"login": "ava.adams@lakeviewhealth.example", "department": "Engineering"}
+  },
+  {
+    "id": "00u2inactive",
+    "status": "ACTIVE",
+    "created": "2025-03-01T15:00:00.000Z",
+    "lastLogin": "2026-05-02T09:30:00.000Z",
+    "profile": {"login": "ben.cruz@lakeviewhealth.example", "department": "Clinical"}
+  },
+  {
+    "id": "00u3never",
+    "status": "ACTIVE",
+    "created": "2026-08-01T15:00:00.000Z",
+    "lastLogin": null,
+    "profile": {"login": "erin.fox@lakeviewhealth.example", "department": "Engineering"}
+  },
+  {
+    "id": "00u4staged",
+    "status": "STAGED",
+    "created": "2026-07-15T15:00:00.000Z",
+    "lastLogin": null,
+    "profile": {"login": "gina.hale@lakeviewhealth.example", "department": "Finance"}
+  },
+  {
+    "id": "00u5suspended",
+    "status": "SUSPENDED",
+    "created": "2025-06-01T15:00:00.000Z",
+    "lastLogin": "2026-10-01T12:00:00.000Z",
+    "profile": {"login": "dan.evans@lakeviewhealth.example", "department": "Finance"}
+  },
+  {
+    "id": "00u6svc",
+    "status": "ACTIVE",
+    "created": "2026-02-01T15:00:00.000Z",
+    "lastLogin": "2026-11-14T03:00:00.000Z",
+    "profile": {"login": "svc-reporting@lakeviewhealth.example", "userType": "Service"}
+  },
+  {
+    "id": "00u7svcowned",
+    "status": "ACTIVE",
+    "created": "2026-02-01T15:00:00.000Z",
+    "lastLogin": "2026-11-14T03:00:00.000Z",
+    "profile": {"login": "svc-backup@lakeviewhealth.example", "userType": "Service", "manager": "cara.diaz"}
+  },
+  {
+    "id": "00u8admin",
+    "status": "ACTIVE",
+    "created": "2025-09-01T15:00:00.000Z",
+    "lastLogin": "2026-11-13T16:00:00.000Z",
+    "profile": {"login": "cara.diaz@lakeviewhealth.example", "department": "Engineering"}
+  }
+]
